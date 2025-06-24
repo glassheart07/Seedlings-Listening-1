@@ -80,12 +80,11 @@
     }
 
     function increaseSpeed() {
-      audio.playbackRate = Math.min(3, audio.playbackRate + 0.25);
+      audio.playbackRate = Math.min(3, audio.playbackRate + 0.1);
       updateStatus();
     }
-
     function decreaseSpeed() {
-      audio.playbackRate = Math.max(0.5, audio.playbackRate - 0.25);
+      audio.playbackRate = Math.max(0.5, audio.playbackRate - 0.1);
       updateStatus();
     }
 
