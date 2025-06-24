@@ -9,6 +9,11 @@
       padding: 4px;
       background: rgba(0,0,0,0.1);
     }
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
     .controls {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +41,7 @@
   </style>
 </head>
 <body>
-
+<div class="container">
   <b>Audio Player</b>
 
   <audio id="audio" preload="auto">
@@ -55,7 +60,7 @@
   </div>
 
   <div class="info" id="status">Volume: 100% | Speed: 1.0x</div>
-
+</div>
   <script>
     const audio = document.getElementById("audio");
     const status = document.getElementById("status");
